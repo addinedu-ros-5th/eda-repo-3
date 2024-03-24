@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Price</title>
+</head>
+<body>
+    <label for="stationInput">Enter station name:</label>
+    <input type="text" id="stationInput">
+    <button onclick="fetchSubwayPrice()">Get Price</button>
+    <br>
+    <label for="priceOutput">Price:</label>
+    <input type="text" id="priceOutput" readonly>
+    
+    <script>
+        function fetchSubwayPrice() {
+    // 입력 상자에서 역 이름 가져오기
+    var stationName = document.getElementById("stationInput").value;
+    
+    // 서버로부터 데이터 가져오기
+    fetch(`/get_price.php/get_price?station=${encodeURIComponent(stationName)}`, {
+        headers: {
+            'Content-Type': 'application/json; charset=utf-8'
+        }
+    })
+    .then(response => response.json())
+    .then(data => {
+        // 가져온 데이터를 출력 상자에 표시
+        document.getElementById("priceOutput").value = data.price;
+    })
+    .catch(error => {
+        console.error('Error:', error);
+    });
+}
+
+    </script>
+</body>
+</html>
