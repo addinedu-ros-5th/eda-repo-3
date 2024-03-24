@@ -6,7 +6,8 @@ $password = "123456";
 $dbname = "eda_project";
 
 // 사용자로부터 역 이름 받기
-$station = $_GET['station'];
+$station1 = $_GET['station1'];
+$station2 = $_GET['station2'];
 
 // 데이터베이스 연결 생성
 $conn = new mysqli($servername, $username, $password, $dbname);
@@ -16,23 +17,27 @@ if ($conn->connect_error) {
     die("데이터베이스 연결 실패: " . $conn->connect_error);
 }
 
-// 데이터 조회 쿼리
-$sql = "SELECT price FROM subway_price WHERE station = '$station'";
-
-$result = $conn->query($sql);
-
-if ($result->num_rows > 0) {
-    // 데이터가 존재하는 경우 JSON 형식으로 반환
-    $row = $result->fetch_assoc();
-    $price = $row["price"];
-    
-    // JSON 형식으로 출력
-    header('Content-Type: application/json');
-    echo json_encode(array('price' => $price));
-} else {
-    // 데이터가 존재하지 않는 경우 에러 메시지 반환
-    echo json_encode(array('error' => 'No data found for the given station'));
+// 첫 번째 역의 가격 조회
+$sql1 = "SELECT price FROM subway_price WHERE station = '$station1'";
+$result1 = $conn->query($sql1);
+$price1 = 0; // 기본값 0으로 설정
+if ($result1->num_rows > 0) {
+    $row = $result1->fetch_assoc();
+    $price1 = $row["price"];
 }
+
+// 두 번째 역의 가격 조회
+$sql2 = "SELECT price FROM subway_price WHERE station = '$station2'";
+$result2 = $conn->query($sql2);
+$price2 = 0; // 기본값 0으로 설정
+if ($result2->num_rows > 0) {
+    $row = $result2->fetch_assoc();
+    $price2 = $row["price"];
+}
+
+// JSON 형식으로 출력
+header('Content-Type: application/json');
+echo json_encode(array('price1' => $price1, 'price2' => $price2));
 
 // 데이터베이스 연결 종료
 $conn->close();
