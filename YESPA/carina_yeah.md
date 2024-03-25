@@ -16,7 +16,8 @@
 ### 언제 많이 교통량이 증가하는지 알았으니 누가 어떤 수단을 많이 이용하는지를 분석해보겠습니다.
 #### 교통수단별 이용빈도 시각화
 - 도시철도가 가장 많은 것을 확인할 수 있고 시내버스, 마을버스, 광역버스 등을 많이 이용하는 것을 확인할 수 있다.
-![image](https://github.com/addinedu-ros-5th/eda-repo-3/assets/163791820/746aa15c-8b80-42c8-916d-8fe276d380e0)
+![image](https://github.com/addinedu-ros-5th/eda-repo-3/assets/163791820/e5f1ada2-bce9-4bd6-bbdd-37b409a6d0e4)
+
 
 
 #### 따릉이 사용 시각화
