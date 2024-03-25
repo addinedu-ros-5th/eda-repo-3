@@ -20,3 +20,6 @@ http://www.seoulmetro.co.kr/kr/page.do?menuIdx=354
 
 ### sinrimline_data.ipynb
 신림선(11개 역) 데이터가 없어 직접 검색 후 데이터 획득 
+
+### stcis_traffic_volume
+평균거리, 평균 시간 정보 및 인천 서울 경유 버스 정보 전처리
