@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subway Price</title>
+</head>
+<body>
+    
+
+    <label for="stationInput">출발역:</label>
+    <input type="text" id="stationInput">
+    <label for="stationInput2">/도착지:가산디지털단지</label>
+    <br>
+    <label for="stationInput2">출발지:가산디지털단지/</label>
+    <label for="stationInput2">도착역:</label>
+    <input type="text" id="stationInput2">
+    <br>
+    <button onclick="fetchSubwayPrice()">금액 조회</button>
+    <br>
+    <label for="text1">하루 교통비:</label>
+    <input type="text" id="text1" readonly>
+    <br>
+    <label for="priceOutput">따릉이 x:</label>
+    <input type="text" id="priceOutput" readonly>
+    <br>
+    <label for="text2">따릉이 o:</label>
+    <input type="text" id="text2" readonly>
+    <br>
+    <!-- <label for="profitAmount">Profit Amount:</label>
+    <input type="text" id="profitAmount" readonly> -->
+    <!-- <br> -->
+    <label for="profitPercentage">손익퍼센트:</label>
+    <input type="text" id="profitPercentage" readonly>
+    <br>
+    <!-- <button onclick="fetchSubwayPrice()">Get Price</button> -->
+    
+    <script>
+        function fetchSubwayPrice() {
+            var stationName1 = document.getElementById("stationInput").value;
+            var stationName2 = document.getElementById("stationInput2").value;
+            
+            // 서버로부터 데이터 가져오기
+            fetch(`/get_price.php/get_price?station1=${encodeURIComponent(stationName1)}&station2=${encodeURIComponent(stationName2)}`, {
+                headers: {
+                    'Content-Type': 'application/json; charset=utf-8'
+                }
+            })
+            .then(response => response.json())
+            .then(data => {
+                // 가져온 데이터를 Text 1에 표시
+                document.getElementById("text1").value = (parseFloat(data.price1) + parseFloat(data.price2)).toFixed(2);
+                // 가져온 데이터를 출력 상자에 표시하고 -55000 적용
+                var totalPrice = (parseFloat(data.price1) + parseFloat(data.price2)) * 20;
+                document.getElementById("priceOutput").value = (totalPrice - 55000).toFixed(2);
+                // 가져온 데이터를 Text 2에 표시하고 -58000 적용
+                document.getElementById("text2").value = (totalPrice - 58000).toFixed(2);
+                // 이익 계산
+                var profitAmount = totalPrice - 55000;
+                // document.getElementById("profitAmount").value = profitAmount.toFixed(2);
+                // 이익 퍼센티지 계산
+                var profitPercentage = (profitAmount / 55000) * 100;
+                document.getElementById("profitPercentage").value = profitPercentage.toFixed(2) + '%';
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+        }
+    </script>
+</body>
+</html>
