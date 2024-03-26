@@ -19,7 +19,7 @@
 -	selenium과 beautifulsoup를 활용한 웹크롤링
 -	pandas 모듈을 통한 데이터 전처리
 -	matplotlib, seaborn, plotly,folium등을 활용한 데이터 시각화
-
+-  Arpache2, mysql, php을 활용한 DB 연동
 # 팀 소개
 ## 팀명 작심삼일
 |이름|역할|
