@@ -1,5 +1,5 @@
-# 1. 수도권 대중교통 및 기후동행카드 이용 현황 분석
-<img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/2d2778fa-d66b-4f69-a978-83845f629d10" width="800" height="400">
+# 1. 대중교통 및 기후동행카드 이용 현황 분석
+<img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/2d2778fa-d66b-4f69-a978-83845f629d10" width="600" height="300">
 
 ### 01. 💡프로젝트 소개
 * 수도권 교통 상황 분석  
