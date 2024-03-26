@@ -133,7 +133,7 @@
 * [서울특별시 분야별 정보](https://news.seoul.go.kr/traffic/climatecard-service)  
 * [서울시 열린데이터광장](https://data.seoul.go.kr/dataList/OA-12914/S/1/datasetView.do)  
 * [경기도 교통정보센터](https://gits.gg.go.kr/gtdb/web/trafficDb/publicTransport/passengersByRoute.do)  
-* [서울특별시 대중교통 출발/도착 현황](https://www.data.go.kr/data/15081036/fileData.do?recommendDataYn=Y)
+* [서울특별시 대중교통 O/D(출발 도착) 현황](https://www.data.go.kr/data/15081036/fileData.do?recommendDataYn=Y)
 
   
 # 6. 사용 라이브러리
