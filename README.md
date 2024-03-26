@@ -61,6 +61,14 @@
 
 * 출퇴근 시간대에 대중교통 이용이 몰려있다
 
+### 지역별 선호 교통수단
+<img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/917dd7ae-a3b7-4896-9e1a-d204c976d177" width="330">  
+<img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/3beb3aa6-60c7-4c9b-9ef7-994634660eec" width="330">
+<img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/0a3ccffc-278c-47d4-a483-344c6690b8fb" width="330">
+
+* 서울은 도시철도 이용량이 가장 많다.
+* 반면 경기도와 인천은 시내버스 이용량이 1위고 도시철도가 2위이다.
+
 ### 수도권 오전 오후 유입인구
 <img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/122e68a0-cdb8-45f1-9bb1-6c2f59e0aa0c" width="500">  
 
@@ -68,7 +76,7 @@
 * 경기도, 인천에선 인구가 오전에 유출되고 오후에 다시 유입되는 모습을 보이지만 서울에서는 인구가 오전에 유입되고 오후에 유출되는 모습을 보인다.
 
 ### 서울 유입 지역 순위
-<img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/68999d62-f843-4cb1-b9f3-a5848a169f2e" width="500">  
+<img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/68999d62-f843-4cb1-b9f3-a5848a169f2e" width="500">
 
 * 서울로 많이 이동하는 지역들이다. 서울과 버스와 철도가 잘 연결되어 있지만 기후동행카드의 혜택을 받지 못하는 지역들이 많다.
 
