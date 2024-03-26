@@ -25,7 +25,7 @@
 |이름|역할|
 |:---:|:---:|
 |김민경|데이터 수집, 전처리 및 시각화 / 총괄|
-|김세현|데이터 수집, 전처리 및 시각화 / DB 구성|
+|김세현|데이터 수집, 전처리 및 시각화 / DB 구성/Readme 마스터|
 |김요한|데이터 수집, 전처리 및 시각화 / 분석(EDA)|
 |신재훈|데이터 수집, 전처리 및 시각화 / 분석(EDA) / 발표|
 
@@ -129,11 +129,11 @@
 * 따라서 서울 외 수도권에서도 기후동행카드를 지원해줄 필요가 있다.
 
 # 5. 자료 출처
-* 교통카드 빅데이터 통합정보시스템  
-* 서울특별시 분야별 정보  
-* 서울시 열린데이터광장  
-* 경기도 교통정보센터  
-* 서울특별시 대중교통 출발/도착 현황
+* [교통카드 빅데이터 통합정보시스템](https://www.stcis.go.kr/wps/main.do)  
+* [서울특별시 분야별 정보](https://news.seoul.go.kr/traffic/climatecard-service)  
+* [서울시 열린데이터광장](https://data.seoul.go.kr/dataList/OA-12914/S/1/datasetView.do)  
+* [경기도 교통정보센터](https://gits.gg.go.kr/gtdb/web/trafficDb/publicTransport/passengersByRoute.do)  
+* [서울특별시 대중교통 출발/도착 현황](https://www.data.go.kr/data/15081036/fileData.do?recommendDataYn=Y)
 
   
 # 6. 사용 라이브러리
