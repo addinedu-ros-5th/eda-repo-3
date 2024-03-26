@@ -39,7 +39,7 @@
 ### 데이터베이스에 수집한 자료 업로드
 ---------
 ### selenium을 사용해서 대중교통 빅데이터 크롤링
-<img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/19d2c4d4-e0ee-4e1c-8313-2e5a7a3353b4"> 
+![Screenshot from 2024-03-26 14-54-27](https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/cf92e679-117e-45ee-ac29-2ecc4ee5c77e)
 
 1. 월별, 시군구별로 하나씩 선택하여 데이터를 다운받는 코드 작성
 2. 이외에도 서울시 열린데이터광장, 경기도교통정보센터, 서울교통정보 등 사이트들에서 데이터를 수집했다
