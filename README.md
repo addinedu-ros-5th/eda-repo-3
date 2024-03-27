@@ -20,7 +20,6 @@
 -	pandas 모듈을 통한 데이터 전처리
 -	matplotlib, seaborn, folium 등을 활용한 데이터 시각화
 -  Apache2, Mysql, Php(AMP)를 통한 DB 연동 
--  
 # 팀 소개
 ## 팀명 작심삼일
 |이름|역할|
@@ -112,7 +111,7 @@
 <img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/c934035e-7ca0-49e6-982e-303c95a61815" width="500">  
 
 
-* 수도권 도시철도중에서 기후동행카드를 사용할 수 있는 역이 대다수
+* 수도권 도시철도중에서 기후동행카드를 사용할 수 없는 역이 대다수
 
 <img src="https://github.com/addinedu-ros-5th/eda-repo-3/assets/55865857/611d3b4c-fb90-42f2-a150-2c11ffb3c6f6" width="500">  
 
